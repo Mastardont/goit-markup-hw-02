@@ -7,6 +7,12 @@
     --main-color-txt: #757575;
     --secondary-color-txt: #212121;
     --accent-color-txt: #FFFFFF;
+
+    --backlight-color: #2196F3;
+    --background-color: #2F303A;
+    --logo-dark: #000000;
+
+    --background-btn: #F5F4FA;
 }
 
 body {
@@ -17,8 +23,9 @@ body {
         /* Header */
 
 .logo {
-    color: #2196F3;
+    color: var(--backlight-color);
     font-family: var(--font-logo);
+    text-decoration: none;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -26,11 +33,17 @@ body {
 }
 
 .logo-studio {
-    color: #000000;
+    color: var(--logo-dark);
+}
+
+.list {
+    list-style: none;
 }
 
 .navigation-link{
+    color: var(--secondary-color-txt);
     counter-reset: var(--secondary-color-txt);
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -39,7 +52,7 @@ body {
 
 .navigation-link:hover,
 .navigation-link:focus {
-    color: #2196F3;
+    color: var(--backlight-color);
 }
 
 .navigation-mail-phone {
@@ -49,17 +62,23 @@ body {
     letter-spacing: 0.02em;
 }
 
+.navigation-phone,
+.navigation-mail {
+    color: var(--main-color-txt);
+    text-decoration: none;
+}
+
 .navigation-phone:hover,
 .navigation-phone:focus,
 .navigation-mail:hover,
 .navigation-mail:focus {
-    color: #2196F3;
+    color: var(--backlight-color);
 }
 
         /* Main */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--background-color);
 }
 
 .hero-title {
@@ -71,7 +90,7 @@ body {
 }
 
 .hero-btn {
-    background: #2196F3;
+    background: var(--backlight-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -131,11 +150,17 @@ body {
         /* Footer */
 
 footer {
-    background-color: #2F303A;
+    background-color: var(--background-color);
+}
+
+.studio {
+    color: var(--accent-color-txt);
 }
 
 .contacts-address {
     color: var(--accent-color-txt);
+    font-style: normal;
+    text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -143,6 +168,8 @@ footer {
 
 .contacts-mail,
 .contacts-phon{
+    font-style: normal;
+    text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -155,7 +182,7 @@ footer {
 .contacts-phon:focus,
 .contacts-address:hover,
 .contacts-address:focus {
-    color: #2196F3;
+    color: var(--backlight-color);
 }
 
         /* Portfolio */
@@ -165,7 +192,7 @@ footer {
     height: 38px;
     left: 576px;
     top: 174px;
-    background: #F5F4FA;
+    background: var(--background-btn);
     border-radius: 4px;
     cursor: pointer;
 
@@ -174,6 +201,12 @@ footer {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: var(--accent-color-txt);
+    background-color: var(--backlight-color);
 }
 
 .portfolio-title {
@@ -185,7 +218,12 @@ footer {
 }
 
 .portfolio-text {
+    color: var(--main-color-txt);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+
+.portfolio-link {
+    text-decoration: none;
 }
