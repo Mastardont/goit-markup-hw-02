@@ -18,6 +18,9 @@
 body {
   font-family: var(--font-family);
   color: var(--main-color-txt);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color-txt);
 }
 
 /* Header */
@@ -29,7 +32,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .logo-studio {
@@ -45,8 +47,7 @@ body {
   counter-reset: var(--secondary-color-txt);
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -61,8 +62,7 @@ body {
 
 .navigation-mail-phone {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -87,6 +87,7 @@ body {
 
 .hero-title {
   color: var(--accent-color-txt);
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -109,16 +110,12 @@ body {
 .peculiarities-title {
   color: var(--secondary-color-txt);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .peculiarities-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .service-title {
@@ -126,7 +123,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
 }
 
 .command-title {
@@ -134,7 +130,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
 }
 
 .command-text {
@@ -142,13 +137,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 
 .command-text-prof {
   font-size: 16px;
-  line-height: 1.18px;
-  letter-spacing: 0.03em;
+  line-height: 1.18;
 }
 
 /* Footer */
@@ -165,18 +158,14 @@ footer {
   color: var(--accent-color-txt);
   font-style: normal;
   text-decoration: none;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .contacts-mail,
 .contacts-phon {
   font-style: normal;
   text-decoration: none;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -192,10 +181,6 @@ footer {
 /* Portfolio */
 
 .portfolio-btn {
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
   background: var(--background-btn);
   border-radius: 4px;
   cursor: pointer;
@@ -204,7 +189,6 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
 }
 
 .portfolio-btn:hover,
@@ -225,7 +209,6 @@ footer {
   color: var(--main-color-txt);
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 
 .portfolio-link {
